@@ -11,7 +11,9 @@ public class NumberGenerator {
         double min= Double.parseDouble(args[1]);
         double max= Double.parseDouble(args[2]);
         for(int i=0; i<anzahlZahlen;i++){
-            double doubleNumber= StdRandom.uniformDouble(min,max+1);
+            double doubleNumber;
+            while((doubleNumber= StdRandom.uniformDouble(min,max+1))>2){
+           }
             int intNumber= StdRandom.uniformInt((int)min,(int)max+1);
             if(5>StdRandom.uniformInt(0,11)) {
                 System.out.println(doubleNumber+" ");
